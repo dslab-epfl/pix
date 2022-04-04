@@ -8,10 +8,10 @@ PIX was published at NSDI'22 ([paper](https://dslab.epfl.ch/pubs/pix.pdf)).
 
 Subdirectories have their own README files.
 
-* dpdk-nfs - contains the set of NFs written using Intel's DPDK that we extracted performance interfaces for. 
-* ebpf-nfs - contains the set of NFs written using the eBPF XDP framework that we extracted performance interfaces for. 
-* install.sh - script to install all of PIX's dependencies 
-* install - patches and config files for PIX's dependencies
+* `dpdk-nfs` - contains the set of NFs written using Intel's DPDK that we extracted performance interfaces for. 
+* `ebpf-nfs` - contains the set of NFs written using the eBPF XDP framework that we extracted performance interfaces for. 
+* `install.sh` - script to install all of PIX's dependencies 
+* `install` - patches and config files for PIX's dependencies
 
 # Getting Started
 
