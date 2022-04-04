@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-NF=$1
-METRICS=${2-x86}
-TEST=${3:-all}
+NF="${PWD##*/}"
+METRICS=${1-x86}
+TEST=${2:-all}
 
 if ! [[ "$NF" =~ ^(vignat|bridge|vigbalancer|lpm|vigpol|vigfw)$ ]]; then
   echo "Unsupported NF: $NF"

@@ -84,5 +84,5 @@ helper-contracts:
 perf-contract:
 	cd klee-last && $(KLEE_INCLUDE)/../scripts/process-traces.sh . verify-dpdk llvm Num_bucket_traversals 1 Num_hash_collisions 0  expired_flows 0
 
-perf-summary: clean libbpf xdp-target symbex helper-contracts perf-contract
+perf-interface: clean libbpf xdp-target symbex helper-contracts perf-contract
 	bash $(KLEE_INCLUDE)/../scripts/tree-gen/build_trees.sh -m 1000 -n 0 -e llvm
