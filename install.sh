@@ -309,8 +309,7 @@ source_install_llvm()
 		cd build
 		[ -f "Makefile" ] || \
 			CXXFLAGS="-D_GLIBCXX_USE_CXX11_ABI=0" \
-			cmake --enable-optimized --disable-assertions \
-			--enable-targets=host --with-python='/usr/bin/python2' ../
+			cmake ../
 		make -kj
 	fi
 }
