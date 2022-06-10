@@ -360,8 +360,7 @@ source_install_klee()
 		cd klee
 		git fetch && git checkout "$KLEE_RELEASE"
 	else
-		# TODO should probably use https here to not require an ssh key to exist
-		git clone --recurse-submodules git@github.com:bolt-perf-contracts/klee.git
+		git clone --recurse-submodules https://github.com/bolt-perf-contracts/klee.git
 		cd klee
 		git checkout "$KLEE_RELEASE"
 	fi
