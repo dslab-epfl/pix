@@ -310,7 +310,7 @@ source_install_llvm()
 		[ -f "Makefile" ] || \
 			CXXFLAGS="-D_GLIBCXX_USE_CXX11_ABI=0" \
 			cmake ../
-		make -kj
+		make -j30
 	fi
 }
 
